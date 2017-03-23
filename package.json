@@ -1,0 +1,18 @@
+{
+  "name": "demo-css3-effects",
+  "scripts": {
+    "prestart": "npm install",
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "deploy": "gh-pages -d dist",
+    "server": "http-server dist -p 5051",
+    "open": "open http://localhost:5051",
+    "start": "run-p server open"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gh-pages": "^0.12.0",
+    "http-server": "^0.9.0",
+    "npm-run-all": "^4.0.2",
+    "open": "0.0.5"
+  }
+}
