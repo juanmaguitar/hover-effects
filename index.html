@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- http://astronautweb.co/snippet/font-awesome/#font-awesome-list -->
+    <style>
+
+    body { margin-top: 20px; }
+    *:before { font-family: FontAwesome; }
+    h1 { text-align: center; }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+    }
+
+    .categories a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* ----------------- */
+
+    .sections { display: flex; }
+    .sections > div { display: flex; height: 170px; }
+    .sections > div a { padding:0; }
+    .sections > div span {
+      bottom: 10px;
+      position: absolute;
+      bottom: 10px;
+      display: block;
+      width: 100%;
+    }
+    [class^=hvr-icon]:before {
+      font-size: 90px;
+      width: 80px;
+    }
+
+    .gear:before { content: "\f013"; }
+    .heart:before { content: "\f013"; }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+      <h1>Demo Hover.css</h1>
+      <hr>
+        <!-- @begin first row examples -->
+        <div class="categories">
+            <a class="hvr-grow quick-btn" href="#">
+                <i class="fa fa-briefcase fa-2x"></i>
+                <br/>
+                <span> Briefcase</span>
+                <span class="label label-danger">2</span>
+            </a>
+            <a class="hvr-grow quick-btn" href="#">
+                <i class="fa fa-diamond fa-2x"></i>
+                <br/>
+                <span> Diamond</span>
+                <span class="label label-success">4</span>
+            </a>
+            <a class="hvr-grow quick-btn" href="#">
+                <i class="fa fa-sellsy fa-2x"></i>
+                <br/>
+                <span> Sellsy</span>
+                <span class="label label-warning">7</span>
+            </a>
+            <a class="hvr-grow quick-btn" href="#">
+                <i class="fa fa-venus-mars fa-2x"></i>
+                <br/>
+                <span> Venus Mars</span>
+                <span class="label btn-metis-4">10</span>
+            </a>
+        </div>
+        <!-- @end first row examples -->
+
+        <!-- <button type="button" class="hvr-icon-rotate btn btn-default btn-lg">
+            <span>Star</span>
+        </button>
+        <a href="#" class="hvr-grow">Add to Basket</a> -->
+
+        <hr>
+
+        <!-- @begin second row examples -->
+        <div class="row sections">
+            <div class="col-md-3">
+                <a class="hvr-icon-drop btn btn-block btn-lg btn-success">
+                  <span class="big-text">Map</span>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="hvr-icon-pop btn btn-block btn-lg btn-danger">
+                  <span class="big-text">Favorites</span>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="hvr-icon-rotate gear btn btn-block btn-lg btn-primary">
+                    <span class="big-text">Configuration</a>
+            </div>
+            <div class="col-md-3">
+                <a class="hvr-icon-up btn btn-block btn-lg btn-warning">
+                    <span class="big-text">Upload</span>
+                </a>
+            </div>
+        </div>
+        <!-- @end second row examples -->
+
+        <hr>
+
+
+    </div>
+</body>
+
+</html>
