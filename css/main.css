@@ -1,39 +1,141 @@
-.quick-btn {
-  position: relative;
-  display: inline-block;
-  width: 90px;
-  height: 80px;
-  padding-top: 16px;
-  margin: 10px;
-  color: #444444;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
-  -webkit-box-shadow: 0 0 0 1px #F8F8F8 inset, 0 0 0 1px #CCCCCC;
-  box-shadow: 0 0 0 1px #F8F8F8 inset, 0 0 0 1px #CCCCCC;
-}
-.quick-btn .label {
-  position: absolute;
-  top: -5px;
-  right: -5px;
+/* List characters icons => http://astronautweb.co/snippet/font-awesome/#font-awesome-list */
+
+body {
+    margin: 20px 0 40px;
 }
 
-.btn-metis-4 {
-  color: #ffffff;
-  background-color: #a264e7;
-  border-color: #62309a;
+*:before {
+    font-family: FontAwesome;
 }
 
-/* ------------ */
+h1 {
+    text-align: center;
+}
 
-.big-text {
-    font-size: 2.5rem;
-    color: white;
+h3 {
+  margin: 75px 0 30px;
+  padding-bottom:10px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* FIRST row (categories small buttons) */
+
+.categories {
+    display: flex;
+    justify-content: center;
+}
+
+.categories a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.venus-mars:hover {
+    border: 1px solid #ccc;
+}
+
+
+/* SECOND row (sections big buttons) */
+
+.sections {
+    display: flex;
+}
+
+.sections > div {
+    display: flex;
+    height: 170px;
+}
+
+.sections > div a {
+    padding: 0;
+}
+
+.sections > div span {
+    bottom: 10px;
+    position: absolute;
+    bottom: 10px;
     display: block;
-    margin-top:10px;
+    width: 100%;
 }
 
-.big-icon {
-    font-size: 8rem;
-    color:#fff;
+.sections [class^=hvr-icon]:before {
+    font-size: 90px;
+    width: 80px;
+}
+
+.gear:before {
+    content: "\f013";
+}
+
+
+/* THIRD row (bootstrap buttons) */
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-info,
+.my-warning,
+.my-danger {
+    border-radius: 0;
+}
+
+.my-info:before {
+    background: #0038A8;
+}
+
+
+/* FOURTH row (icons) */
+
+.heart {
+    padding-left: 2.5em;
+    padding-right: 1em;
+}
+
+.heart:before {
+    content: "\f08a";
+    left: 0.8em;
+    right: inherit;
+}
+
+.heart.full:before {
+    content: "\f004";
+}
+
+.terminal:before {
+    content: "\f120";
+}
+
+.thumbs-up:before {
+    content: "\f164";
+}
+
+.hand-right:before {
+    content: "\f0a4";
+}
+
+.card {
+    border: 1px solid #ccc;
+}
+
+
+/* FIFTH row (images) */
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.image-gallery img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.my-image:hover:before {
+    border: #337ab7 solid 6px;
 }
