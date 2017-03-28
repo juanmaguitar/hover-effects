@@ -19,6 +19,6 @@ This will install the libraries needed and will open the demo in browser
 
 - This demo uses some _snippets_ from [bootsnipp.com](http://bootsnipp.com/). The styles used from this site are in `dist/css/bootsnipp.css`
 
-- The customization of the effects using hover.css is `dist/css/bootsnipp.css`
+- The customization of the effects using hover.css is `dist/css/main.css`
 
 - The css use characters codings for Font Awesome icons. The full list is available at: http://astronautweb.co/snippet/font-awesome/#font-awesome-list
